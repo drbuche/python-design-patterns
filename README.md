@@ -1,7 +1,7 @@
 ![N|Solid](https://i.imgur.com/1v4cCJt.jpg)
 
 # Design Patterns - Visão geral e aplicação em Python.
-Os padrões de projeto (design patterns) servem para auxiliar na resolução de problemas da forma mais elegante e otimizada possível.
+Os padrões de projeto (design patterns) servem para nos auxiliar nas resoluções de problemas, da forma mais elegante e otimizada possível.
  
 Estes padrões unem anos de experiência em desenvolvimento de software, adquiridos por diversos designer e arquitetos de softwares. 
 
@@ -11,10 +11,10 @@ São soluções que resistiram ao tempo e demonstraram sua eficiência no quesit
 
 # Patterns:
 
-
-|   ⚒️ |     Padrões de Criação      |    Variações.  |    Ligado com a criação de objetos  |
+|   ⚒️ |     [Padrões Criacionais](https://github.com/drbuche/python-design-patterns/tree/master/Creational)      |    Variações.  |    Ligado com a criação de objetos  |
 |:----------:|:-------------:|:------:|:------:|
-|☝🏻|   Singleton | Tradicional, Singleton MetaCLass, Meta Class, Monostate. |   Ter um e somente um objeto de determinado tipo. |
+|[☝🏻](https://github.com/drbuche/python-design-patterns/tree/master/Creational/Singleton)|   [Singleton](https://github.com/drbuche/python-design-patterns/tree/master/Creational/Singleton) | [Tradicional](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Singleton/01_Singleton_Tradicional.py), [Monostate](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Singleton/02_Monostate_Borg.py), [Lazy Instantiation](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Singleton/03_Singleton_Lazy_Instantiation.py), [MetaCLass](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Singleton/04_Singleton_MetacLass.py). |   Ter um e somente um objeto de determinado tipo. |
+|[🏭]()|   [Factory]() | [Simple Factory](), [Factory Method](), [Abstract Factory](). |   *Em construção...* |
 
 
 # Referências:
@@ -23,3 +23,7 @@ São soluções que resistiram ao tempo e demonstraram sua eficiência no quesit
 
 - [x] [Refactoring.Guru - Design Patterns](https://refactoring.guru/pt-br/design-patterns).
 
+- [x] [Padrões de Projetos: Soluções Reutilizáveis de Software Orientados a Objetos](https://www.amazon.com.br/Padr%C3%B5es-Projetos-Solu%C3%A7%C3%B5es-Reutiliz%C3%A1veis-Orientados/dp/8573076100/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=GoF&qid=1600214794&sr=8-1).
+
+
+*Projeto em construção.*
