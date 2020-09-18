@@ -1,10 +1,10 @@
-# Padrão de projeto criacional (creational) - Factory:
+# Padrão de Projeto Criacional ([Creational](https://github.com/drbuche/python-design-patterns/tree/master/Creational)) - Factory:
 
 <p align="center">
   <img src="https://i.imgur.com/O7MSnfM.jpg">
 </p>
 
-## Características gerais: 
+## Características Gerais: 
 O pattern Factory é considerado um dos padrẽos mais utilizados!
 
 Ele é caracterizado por uma classe que é responsável por criar objetos de outros tipos. Normalmente uma Factory é associada a um objeto e métodos. No momento em que o usuário chama esses métodos, utilizando certos parâmetros, a Factory instancia o objeto de acordo com esses especificidades e retorna ao usuário.
@@ -114,8 +114,8 @@ Iniciamos criando a nossa classe `LocalFactoryAbstrato`, uma classe abstrata res
 
 A partir desta classe, nós criamos as respectivas classes concretas:
 - `CavernaConcreto(LocalFactoryAbstrato)` - que possui os métodos:
-    - criar_grupo_sem_healer - que retorna um grupo com Guerreiro e Ladino .
-    - criar_com_healer - que adiciona um Sacerdote no grupo.
+    - `criar_grupo_sem_healer()` - que retorna um grupo com Guerreiro e Ladino .
+    - `criar_com_healer()` - que adiciona um Sacerdote no grupo.
 
 - `MasmorraConcreto(LocalFactoryAbstrato)` - que possui os métodos:
     - `criar_grupo_sem_healer()` - que retorna um grupo com Mago e Barbaro.
