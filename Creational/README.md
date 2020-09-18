@@ -2,14 +2,14 @@
   <img src="https://i.imgur.com/NVjJ7fN.jpg">
 </p>
 
-# Padrão de Projeto Criacional (Creational):
+# Padrões de Projeto Criacionais (Creational):
 
-Quando vem a pergunta... "*Como vou criar meus objetos?*" o nome da solução já está implícito! Lançamos mão de Padrões Criacionais (Creational).
+Quando vem a pergunta... "*Como vou criar meus objetos?*" a solução já está implícita na frase! Lançamos mão de Padrões Criacionais (Creational).
 
-Os padrões Criacionais são caracterizados por definir como os objetos podem ser criados, isolando o detalhe da criação dos objetos e tornando o código mais independente, quanto ao tipo objeto a ser criado.
+Os padrões Criacionais são caracterizados por definir como os objetos podem ser criados, isolando o detalhe da criação desses objetos e tornando o código mais independente. Com isso temos um código que não será refém do tipo de objeto desejamos criar.
 
 Nessa sessão, trabalharemos muito com:
-- Desacoplamento
+- Acoplamentos/Desacoplamento
 - Heranças
 - Polimorfismo
 - Interfaces 
