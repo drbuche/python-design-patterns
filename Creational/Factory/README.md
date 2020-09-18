@@ -7,14 +7,14 @@
 ## Características Gerais: 
 O pattern Factory é considerado um dos padrẽos mais utilizados!
 
-Ele é caracterizado por uma classe que é responsável por criar objetos de outros tipos. Normalmente uma Factory é associada a um objeto e métodos. No momento em que o usuário chama esses métodos, utilizando certos parâmetros, a Factory instancia o objeto de acordo com esses especificidades e retorna ao usuário.
+Ele é caracterizado por uma classe que é responsável por criar objetos de outros tipos. Normalmente uma Factory é associada a um objeto e métodos. No momento em que o usuário chama esses métodos, utilizando certos parâmetros, a Factory instancia o objeto de acordo com tais especificidades e retorna-o ao usuário.
 
 Temos diferentes representações deste pattern, sendo elas:
  - [Simple Factory](#simple-factory).
  - [Polymorphic Factory Method](#polymorphic-factory-method).
  - [Abstract Factory](#abstract-factory).
 
-## Por que usar uma Factory e não instanciar o objeto direto na classe do usuário?
+## Por que usar uma Factory e não instanciar o objeto direto na classe?
 Essa é uma questão muito levantada no primeiro contato com esse pattern , pois não parece tão prático criar uma interface só para instanciar novos objetos, mas quando olhamos mais atentamente, vemos suas vantagens, como:
 
 - Baixo acoplamento, tendo em vista que a criação do objeto pode acontecer mesmo sem a implementação da classe.
@@ -31,7 +31,7 @@ Essa versão é considerada mais como um conceito básico para dar um norte de c
 
 Possui como premissa a possibilidade da interface criar novos objetos sem expor a lógica por trás de sua criação.
 
-Inicialmente, necessitamos de uma classe abstrata para armazenar métodos e atributos genericos. Então vem o primeiro problema, pois python por si só, não nos fornece classes abstratas, então devemos importar os módulos `ABC` e `abstractclassmethod` do pacote `abc` com o comando `from abc import ABC, abstractclassmethod`. 
+Inicialmente, necessitamos de uma classe abstrata para armazenar métodos e atributos genéricos. Então vem o primeiro problema, pois python por si só, não nos fornece classes abstratas, então devemos importar os módulos `ABC` e `abstractclassmethod` do pacote `abc` com o comando `from abc import ABC, abstractclassmethod`. 
 
 Com os modulos em mãos, podemos dar inicio ao nosso pattern.
 
@@ -41,7 +41,7 @@ Após termos criado a classe abstrata, com todos os métodos e parâmetros gené
 
 *Mas se todas herdam da mesma classe, como faremos para diferenciar os objetos instanciados pelas classes filhas?*
 
-Utilizamos do polimorfismo para sobrescrever os métodos e parâmetros herdados que desejamos que sejam diferentes entre as classes. No exemplo, temos classes que representam personagens distintos, mas que herdam o método `fala()` da classe abstrata `Sociedade`. Tendo em vista que a fala desses personagens não são iguais, devemos sobrescrever estes métodos, adequando a realidade de cada classe `Personagem`.
+Utilizamos do polimorfismo para sobrescrever os métodos e parâmetros herdados que desejamos que sejam diferentes entre as classes. No [exemplo](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Factory/01_Simple_Factory.py), temos classes que representam personagens distintos, mas que herdam o método `fala()` da classe abstrata `Sociedade`. Tendo em vista que a fala desses personagens não são iguais, devemos sobrescrever estes métodos, adequando a realidade de cada classe `Personagem`.
 
 Por fim, devemos criar uma interface, representada pela classe `FabricaDeFalas`. Essa classe funciona como um vendedor de uma taberna, ela será responsável por conversar com o usuário, e após entender as características da bebida que ele deseja, o taberneiro se vira, pega a bebida correspondente e a entrega ao usuário.
 
@@ -69,7 +69,7 @@ A criação do Polymorphic Factory Method não é feita pela instanciação, mas
 - `Flecha`
 - `Adaga`
 
-Essas classes concretas implementam o método abstrato que herdamos da classe `Projeto` e exibe o respectivo nome do armamento. 
+Essas classes concretas implementam o método abstrato que herdamos da classe `Armamento` e exibe o respectivo nome do armamento. 
 
 3 - Agora, do outro lado do UML, começamos pela classe abstrata `Creator`, que foi nomeada de `Personagem`. Essa classe fornece o método `criar_personagem()`, que tem a função genérica de criar um personagens.
 
