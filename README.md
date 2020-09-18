@@ -28,7 +28,7 @@ Os padrões de projetos são classificados da seguinte forma:
 
 |   🏗️ |     [Padrões Estruturais]()      |    Variações.  |    Como objetos e classes podem se combinar para compor estruturas maiores.  |
 |:----------:|:-------------:|:------:|:------:|
-|  [⚒]  |  [Facade]()  |  *Em contrução...* |  *Em contrução...* |
+|  ⚒  |  [Facade]()  |  *Em construção...* |  *Em construção...* |
 
 
 # Referências:
