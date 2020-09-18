@@ -13,7 +13,7 @@ São soluções que resistiram ao tempo e demonstraram sua eficiência no quesit
 
 Os padrões de projetos são classificados da seguinte forma:
 
-- [Padrões de Criação]().
+- [Padrões de Criação](https://github.com/drbuche/python-design-patterns/tree/master/Creational).
 - Padrões Estruturais
 - PadrõesComportamentais.
 
@@ -22,7 +22,7 @@ Os padrões de projetos são classificados da seguinte forma:
 |   [⚒](github.com/drbuche/python-design-patterns/tree/master/Creational)️ |     [Padrões Criacionais](https://github.com/drbuche/python-design-patterns/tree/master/Creational)      |    Variações.  |    Ligado com a criação de objetos  |
 |:----------:|:-------------:|:------:|:------:|
 |[☝🏻](https://github.com/drbuche/python-design-patterns/tree/master/Creational/Singleton)|   [Singleton](https://github.com/drbuche/python-design-patterns/tree/master/Creational/Singleton) | [Tradicional](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Singleton/01_Singleton_Tradicional.py), [Monostate](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Singleton/02_Monostate_Borg.py), [Lazy Instantiation](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Singleton/03_Singleton_Lazy_Instantiation.py), [MetaCLass](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Singleton/04_Singleton_MetacLass.py). |   *Ter um e somente um objeto de determinado tipo.* |
-|[🏭]()|   [Factory]() | [Simple Factory](), [Polymorphic Factory Method](), [Abstract Factory](). |   *Ter uma 'Fabrica' (classe) responsável por criar objetos de outros tipos.* |
+|[🏭]()|   [Factory](https://github.com/drbuche/python-design-patterns/tree/master/Creational/Factory) | [Simple Factory](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Factory/01_Simple_Factory.py), [Polymorphic Factory Method](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Factory/02_Factory_Method.py), [Abstract Factory](https://github.com/drbuche/python-design-patterns/blob/master/Creational/Factory/03_Abstract_Factory.py). |   *Ter uma 'Fabrica' (classe) responsável por criar objetos de outros tipos.* |
 
 ## [Padrões Estruturais]()
 
