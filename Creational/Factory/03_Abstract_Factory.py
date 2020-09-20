@@ -1,14 +1,14 @@
-from abc import ABCMeta, abstractclassmethod
+from abc import ABCMeta, abstractmethod
 
 
 # Factory Abstrata de Grupos
 class LocalFactoryAbstrato(metaclass=ABCMeta):
-    @abstractclassmethod
-    def criar_grupo_sem_healer(cls):
+    @abstractmethod
+    def criar_grupo_sem_healer(self):
         pass
 
-    @abstractclassmethod
-    def criar_com_healer(cls):
+    @abstractmethod
+    def criar_com_healer(self):
         pass
 
 
@@ -35,13 +35,13 @@ class MasmorraConcreto(LocalFactoryAbstrato):
 #  Produto Abstrato
 
 class SemCura(metaclass=ABCMeta):
-    @abstractclassmethod
+    @abstractmethod
     def grupo_basico(cls, dungeon):
         pass
 
 
 class ComCura(metaclass=ABCMeta):
-    @abstractclassmethod
+    @abstractmethod
     def cura_adicional(cls, dungeon):
         pass
 

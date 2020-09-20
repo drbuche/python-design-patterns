@@ -1,4 +1,4 @@
-from abc import ABC, abstractclassmethod  # Módulos que possibilitam a criação de uma classe abstrata.
+from abc import ABC, abstractmethod  # Módulos que possibilitam a criação de uma classe abstrata.
 
 """
  V - Implementação da clase abstrata 'Product'. - V
@@ -7,8 +7,8 @@ from abc import ABC, abstractclassmethod  # Módulos que possibilitam a criaçã
 
 
 class Armamento(ABC):
-    @abstractclassmethod  # Método abstrato genérico que sera herdado.
-    def arma(cls):
+    @abstractmethod  # Método abstrato genérico que sera herdado.
+    def arma(self):
         pass
 
 
