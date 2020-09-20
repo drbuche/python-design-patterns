@@ -1,7 +1,7 @@
-from abc import ABC, abstractmethod  # Módulos que possibilitam a criação de uma classe abstrata.
+from abc import ABCMeta, abstractmethod  # Módulos que possibilitam a criação de uma classe abstrata.
 
 
-class Sociedade(ABC):  # Implementação da classe abstrata.
+class Sociedade(metaclass=ABCMeta):  # Implementação da classe abstrata.
     @abstractmethod  # Implementação do método abstrato.
     def fala(self):
         pass

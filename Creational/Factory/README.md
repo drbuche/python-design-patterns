@@ -31,7 +31,7 @@ Essa versão é considerada mais como um conceito básico para dar um norte de c
 
 Possui como premissa a possibilidade da interface criar novos objetos sem expor a lógica por trás de sua criação.
 
-Inicialmente, necessitamos de uma classe abstrata para armazenar métodos e atributos genéricos. Então vem o primeiro problema, pois python por si só, não nos fornece classes abstratas, então devemos importar os módulos `ABC` e `abstractmethod` do pacote `abc` com o comando `from abc import ABC, abstractmethod`. 
+Inicialmente, necessitamos de uma classe abstrata para armazenar métodos e atributos genéricos. Então vem o primeiro problema, pois python por si só, não nos fornece classes abstratas, então devemos importar os módulos `ABCMeta` e `abstractmethod` do pacote `abc` com o comando `from abc import ABCMeta, abstractmethod`. 
 
 Com os modulos em mãos, podemos dar inicio ao nosso pattern.
 

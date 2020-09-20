@@ -1,4 +1,4 @@
-from abc import ABC, abstractmethod  # Módulos que possibilitam a criação de uma classe abstrata.
+from abc import ABCMeta, abstractmethod  # Módulos que possibilitam a criação de uma classe abstrata.
 
 """
  V - Implementação da clase abstrata 'Product'. - V
@@ -6,7 +6,7 @@ from abc import ABC, abstractmethod  # Módulos que possibilitam a criação de 
 """
 
 
-class Armamento(ABC):
+class Armamento(metaclass=ABCMeta):
     @abstractmethod  # Método abstrato genérico que sera herdado.
     def arma(self):
         pass
@@ -56,13 +56,13 @@ class Adaga(Armamento):
 """
 
 
-class Personagem(ABC):
+class Personagem(metaclass=ABCMeta):
     def __init__(self):
         self.equipamentos = []
         self.criar_personagem()
 
-    @abstractclassmethod
-    def criar_personagem(cls):  # Método abstrato para criar perfil.
+    @abstractmethod
+    def criar_personagem(self):  # Método abstrato para criar perfil.
         pass
 
     def get_nome_das_armas(self):  # Método para retornamos nossa lista de equipamentos.

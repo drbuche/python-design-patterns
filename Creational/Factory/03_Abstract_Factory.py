@@ -36,13 +36,13 @@ class MasmorraConcreto(LocalFactoryAbstrato):
 
 class SemCura(metaclass=ABCMeta):
     @abstractmethod
-    def grupo_basico(cls, dungeon):
+    def grupo_basico(self, dungeon):
         pass
 
 
 class ComCura(metaclass=ABCMeta):
     @abstractmethod
-    def cura_adicional(cls, dungeon):
+    def cura_adicional(self, dungeon):
         pass
 
 
