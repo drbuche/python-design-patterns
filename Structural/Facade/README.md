@@ -40,7 +40,7 @@ O estalajadeiro, coletará seu pedido e distribuirá para cozinha, camareira e d
  
  # Mãos a Obra!
  
-Vamos utilizar o [exemplo]() da estalagem, onde:
+Vamos utilizar o [exemplo](https://github.com/drbuche/python-design-patterns/blob/master/Structural/Facade/Facade.py) da estalagem, onde:
 
 Você, nobre aventureiro, deseja apenas chegar na estalagem e tomar um Hidromel, comer uma enorme Wild Pie e depois descansar em um quarto quente.
 
@@ -118,4 +118,4 @@ Tudo isso é possível pois a interface `Estalajadeiro` simplifica as coisas par
 
 # Ligações:
 
-O padrão `Abstract Factory` pode ser usado com o `Facade` para fornecer uma interface responsavel por criar objetos de um `Subsistema` de forma independente. Pode também ser usado como uma alternativa ao `Facade` para esconder classes de alguma plataforma especifica.
+O padrão [`Abstract Factory`](https://github.com/drbuche/python-design-patterns/tree/master/Creational/Factory#abstract-factory) pode ser usado com o `Facade` para fornecer uma interface responsavel por criar objetos de um `Subsistema` de forma independente. Pode também ser usado como uma alternativa ao `Facade` para esconder classes de alguma plataforma especifica.
